@@ -14,8 +14,12 @@ $(document).ready(function(){
 
     /* This is where my code starts */
     
+    /* Generates a random number between one and a hundred */
     
-    
+    function randomNumber() {
+        Math.floor(Math.random()*100 + 1);
+        window.onload=randomNumber;
+    }
     
     
     $('.new').on('click', function() {
